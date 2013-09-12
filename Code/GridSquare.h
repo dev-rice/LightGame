@@ -1,18 +1,33 @@
+//
+//  GridSquare.h
+//  LightGameXCode
+//
+//  Created by Chris Rice on 9/12/13.
+//  Copyright (c) 2013 Chris Rice. All rights reserved.
+//
+
+#ifndef LightGameXCode_GridSquare_h
+#define LightGameXCode_GridSquare_h
+
 #include <cstdlib>
 
 class GridSquare {
-	private int x,y;
-	private short type; // 0 = blank, 1 = light, 2 = mirror
-
-	private const static int WIDTH = 40;
-	private const static int HEIGHT = 30;
-
-	public GridSquare(int x, int y, short type) { this.x = x, this.y =y, this.type = type;}
-
-	public int getX() { return x;}
-	public int getY() { return y;}
-
-	public void setType(short type){ this.type = type;}
-	public short getType() {return type;}
-
+public:
+    GridSquare(int x, int y, short type) { this->x = x, this->y =y, this->type = type;}
+    
+	int getX() { return x;}
+	int getY() { return y;}
+    
+	void setType(short type){ this->type = type;}
+	short getType() {return type;}
+    
+    const static int WIDTH = 10;
+	const static int HEIGHT = 10;
+    
+private:
+    int x,y;
+	short type; // 0 = blank, 1 = light, 2 = mirror
 };
+
+
+#endif
