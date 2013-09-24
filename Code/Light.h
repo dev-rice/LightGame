@@ -21,8 +21,6 @@ public:
 	Light();
 	void propogate();
     void displayLight();
-    int getSize() {return beam.size();}
-    GridSquare getSquare(int index) {return beam.at(index);}
     
 private:
     int xdir, ydir;

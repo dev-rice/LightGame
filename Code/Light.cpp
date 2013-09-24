@@ -5,7 +5,7 @@
 //  Created by Chris Rice on 9/12/13.
 //  Copyright (c) 2013 Chris Rice. All rights reserved.
 //
-#include "Light.h"
+
 
 using namespace std;
 
