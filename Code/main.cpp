@@ -1,24 +1,12 @@
-#include <iostream>
-#include "Light.h"
-#include "testApp.h"
 #include "ofMain.h"
+#include "testApp.h"
+#include "GridSquare.h"
+#include "Map.h"
 
-using namespace std;
+//========================================================================
+int main( ){
 
-int main() {
-	//cout << "Hello, welcome to Light Game\n";
-    
-    //Light l;
-    //l.propogate();
-    
-    //l.displayLight();
-    
-    ofSetupOpenGL(1024,768, OF_WINDOW);			// <-------- setup the GL context
-    
-	// this kicks off the running of my app
-	// can be OF_WINDOW or OF_FULLSCREEN
-	// pass in width and height too:
+	ofSetupOpenGL(Map::X_SIZE*GridSquare::WIDTH, Map::Y_SIZE*GridSquare::HEIGHT, OF_WINDOW);
 	ofRunApp( new testApp());
-    
-	return 0;
+
 }

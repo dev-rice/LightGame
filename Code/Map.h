@@ -24,12 +24,13 @@ public:
     GridSquare getSquare(int x, int y) {return grid[x][y];}
     int getXSize() {return X_SIZE;}
     int getYSize() {return Y_SIZE;}
+    
+    const static int X_SIZE = 10;
+    const static int Y_SIZE = 10;
 private:
     string name;
     
     int x, y;
-    const static int X_SIZE = 10;
-    const static int Y_SIZE = 10;
     
     GridSquare grid[X_SIZE][Y_SIZE];
 };

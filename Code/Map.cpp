@@ -37,10 +37,7 @@ Map::Map(string name, string filename){
             x=0;
             cout << "\n";
         }
-    
-        
-        
-        //cout << " X: " << x << ", Y: " << y << "\n";
+
     }
 }
 

@@ -11,6 +11,7 @@
 
 #include "Light.h"
 #include "GridSquare.h"
+#include "Map.h"
 #include <cstdlib>
 #include <iostream>
 #include <vector>
@@ -19,8 +20,10 @@ using namespace std;
 class Light {
 public:
 	Light();
-	void propogate();
+	void propogate(Map map);
     void displayLight();
+    int getSize() {return beam.size();}
+    GridSquare getSquare(int index) {return beam.at(index);}
     
 private:
     int xdir, ydir;
