@@ -22,8 +22,7 @@ public:
 	void setType(int type){ this->type = type;}
 	int getType() {return type;}
     
-    const static int WIDTH = 20;
-	const static int HEIGHT = 20;
+    const static int SIZE = 32;
     
 private:
     int x,y;

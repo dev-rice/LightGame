@@ -22,4 +22,5 @@ public:
 private:
     Light light;
     Map map;
+    //ofImage bg;
 };

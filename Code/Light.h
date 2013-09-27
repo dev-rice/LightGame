@@ -23,6 +23,7 @@ public:
 	void propogate(Map map);
     void displayLight();
     int getSize() {return beam.size();}
+    int getSpriteDirection(int index);
     GridSquare getSquare(int index) {return beam.at(index);}
     
 private:

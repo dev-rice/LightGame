@@ -1,13 +1,12 @@
 #include "Mirror.h"
 
-class Mirror: public GridSquare {
-	Mirror(bool state) {
-		this.state = state;
-	}
+Mirror::Mirror (bool state) {
+    this->state = state;
+}
 
-	void reflect(int edge) {
-		if (state == 0) {
-			switch(edge) {
+void Mirror::reflect(int edge) {
+    if (!state) {
+        switch(edge) {
 			case 0:
 				return 1;
 				break;
@@ -20,9 +19,9 @@ class Mirror: public GridSquare {
 			case 3:
 				return 2;
 				break;
-			}
-		} else
-			switch(edge) {
+        }
+    } else {
+        switch(edge) {
 			case 0:
 				return 3;
 				break;
@@ -35,8 +34,6 @@ class Mirror: public GridSquare {
 			case 3:
 				return 0;
 				break;
-			}
-
-	}
-
+        }
+    }
 }

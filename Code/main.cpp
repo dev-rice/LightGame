@@ -5,8 +5,8 @@
 
 //========================================================================
 int main( ){
-
-	ofSetupOpenGL(Map::X_SIZE*GridSquare::WIDTH, Map::Y_SIZE*GridSquare::HEIGHT, OF_WINDOW);
+    
+	ofSetupOpenGL(Map::X_SIZE*GridSquare::SIZE, Map::Y_SIZE*GridSquare::SIZE, OF_WINDOW);
 	ofRunApp( new testApp());
-
+    
 }
