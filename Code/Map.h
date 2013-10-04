@@ -21,7 +21,7 @@ public:
     Map() {;}
     Map(string name, string filename);
     void printGrid();
-    GridSquare getSquare(int x, int y) {return grid[x][y];}
+    GridSquare* getSquare(int x, int y) {return grid[x][y];}
     int getXSize() {return X_SIZE;}
     int getYSize() {return Y_SIZE;}
     
@@ -32,7 +32,7 @@ private:
     
     int x, y;
     
-    GridSquare grid[X_SIZE][Y_SIZE];
+    GridSquare* grid[X_SIZE][Y_SIZE];
 };
 
 #endif

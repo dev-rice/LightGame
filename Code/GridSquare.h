@@ -14,19 +14,27 @@
 class GridSquare {
 public:
     GridSquare() {;}
-    GridSquare(int x, int y, int type) { this->x = x, this->y =y, this->type = type;}
+    GridSquare(int x, int y) { this->x = x, this->y =y;}
     
 	int getX() { return x;}
 	int getY() { return y;}
     
-	void setType(int type){ this->type = type;}
-	int getType() {return type;}
+    bool isEmpty() { return is_empty;}
+    bool isWall() { return is_wall;}
+    bool isMirror() { return is_mirror;}
+    bool isLight() { return is_light;}
     
     const static int SIZE = 32;
     
-private:
+protected:
     int x,y;
-	int type; // 0 = blank, 1 = light, 2 = wall, 3 = mirror
+    
+    bool is_blank = false;
+    bool is_empty = false;
+    bool is_wall = false;
+    bool is_mirror = false;
+    bool is_light = false;
+    
 };
 
 
